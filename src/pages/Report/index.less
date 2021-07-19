@@ -1,0 +1,77 @@
+//@import '~antd/es/style/themes/default.less';
+@import '../../themes/vars';
+
+.main {
+  :global {
+    .ant-descriptions-row > td {
+      padding-bottom: 8px;
+    }
+    .ant-page-header-heading-extra {
+      flex-direction: column;
+    }
+    .ant-tree.ant-tree-directory .ant-tree-treenode {
+      position: relative;
+      white-space: nowrap;
+    }
+  }
+  ::-webkit-scrollbar {             /* 血槽宽度 */
+    width: 16px;
+    height: 8px;
+  }
+
+}
+
+.headerList {
+  margin-bottom: 4px;
+  :global {
+    .ant-descriptions-row > td {
+      padding-bottom: 8px;
+    }
+  }
+
+  .stepDescription {
+    position: relative;
+    left: 38px;
+    padding-top: 8px;
+    font-size: 14px;
+    text-align: left;
+
+    > div {
+      margin-top: 8px;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+.pageHeader {
+  padding: 20px;
+  :global {
+    .ant-page-header-heading-extra > * + * {
+      margin-left: 8px;
+    }
+    .ant-pro-page-header-wrap-main .ant-pro-page-header-wrap-extraContent {
+      min-width: 300px;
+      margin-left: 88px;
+      text-align: right;
+    }
+  }
+  .moreInfo {
+    //display: flex;
+    //justify-content: space-between;
+    //width: 200px;
+  }
+}
+
+@media screen and (max-width: @screen-sm) {
+  .stepDescription {
+    left: 8px;
+  }
+  .pageHeader {
+    :global {
+      .ant-pro-page-header-wrap-row {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
