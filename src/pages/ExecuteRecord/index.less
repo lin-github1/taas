@@ -1,0 +1,37 @@
+@import '../../themes/vars';
+.recordList{
+  margin: 24px 24px 0;
+  //button {
+  //  margin-top: 24px;
+  //}
+  .TaskTable{
+    .cardList{
+      margin-top: 24px;
+    }
+    .validateSourceColumn{
+      min-width: 200px;
+    }
+    .recordTableViewType{
+      text-align: right;
+      margin-bottom: 5px;
+
+      .active{
+        color:@primary-color;
+        border-color: @primary-color;
+      }
+
+    }
+  }
+
+  .ant-card-head{
+    position: relative;
+    .ant-card-head-title{
+      width: ~'calc(100% - 70px)';
+    }
+    .ant-card-extra{
+      position: absolute;
+      right:17.5px;
+      min-width: 68px;
+    }
+  }
+}
